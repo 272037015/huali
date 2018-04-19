@@ -1,5 +1,5 @@
-@charset "utf-8";body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{m0;p0}body,button,input,select,textarea{font:12px/1.5 tahoma,arial,simsun,sans-serif}h1,h2,h3,h4,h5,h6{f100%}address,cite,dfn,em,var{fs n}code,kbd,pre,samp{ff courier new,courier,monospace}small{f12px}ul,ol{list-style:none}a{tdn;c#3e3e3e}a:hover{tdl}sup{v text-top}sub{v text-bottom}legend{c#000}fieldset,img{bd0}button,input,select,textarea{f100%}table{border-collapse:collapse;border-spacing:0}body{bg #6F9290}
+@charset "utf-8";body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{m0;p0}body,button,input,select,textarea{font:12px/1.5 tahoma,arial,simsun,sans-serif}h1,h2,h3,h4,h5,h6{f100%}address,cite,dfn,em,var{fs n}code,kbd,pre,samp{ff courier new,courier,monospace}small{f12px}ul,ol{list-style:none}a{tdn;c#3e3e3e}a:hover{tdl}sup{v text-top}sub{v text-bottom}legend{c#000}fieldset,img{bd0}button,input,select,textarea{f100%}table{border-collapse:collapse;border-spacing:0}body{bg #ddd}
 .demo{w 200;h 200;bd 1 s red;ovh;mla;mra;mt 100;}
 .demo .title{w 100%;h 30; bdb 1 s red;f 18; }
 .demo .content{ovh;}
-.demo a{dib;h 30;lh 30;ell;}
+.demo a{db;h 30;lh 30;ell;}
