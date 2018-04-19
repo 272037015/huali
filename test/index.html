@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>借助service worker在线编译qcss测试</title>
+    <script>
+        if ('serviceWorker' in navigator) {
+            if (!navigator.serviceWorker.controller) {
+                location.href = 'regist.html';
+            }
+        }</script>
+    <!-- <link rel="stylesheet" type="text/css" href="../../gulp-qcss/mini/test/extra.qcss"> -->
+    <link rel="stylesheet" type="text/css" href="./test.qcss">
+    <script>
+        if (!('serviceWorker' in navigator)) {
+            // 测试用，实际开发不走此策略
+            document.querySelector('link').setAttribute('href', './test.css');
+        }
+    </script>
+</head>
+<body>
+<div class="AD"><div class="AE">&nbsp;</div><div class="AF">&nbsp;</div></div>
+
+</body>
+</html>
