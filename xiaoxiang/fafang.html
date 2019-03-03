@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>发放记录</title>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="box_top">
+        <a href="/" class="bt_logo"><img src="images/img_logo.png" alt="小象果园" /></a>
+        <div class="bt_right"><span>厦门吉象吉送电子商务</span><a href="javascript:;" class="bt_right" id="loginShow">登录</a></div>
+    </div>
+    <!-- 登录弹窗 -->
+	<div class="pop_login" id="popLogin">
+		<div class="pl_box" id="loginWrap">
+			<form action="" method="post">
+				<p class="pl_box_title">密码登录</p>
+				<div class="pl_box_c">
+					<div class="pl_bc_list">
+						<div class="left icon_hao">账号</div>
+						<div class="right"><input type="text" name="" placeholder="请输入账号" class="input" id="haoText"></div>
+					</div>
+					<div class="pl_bc_list">
+						<div class="left icon_password">密码</div>
+						<div class="right"><input type="password" name="" placeholder="请输入密码" class="input" id="passwordText"></div>
+					</div>
+					<input type="button" value="登录" class="pl_bc_btn" id="loginBtn">
+					<a href="" class="pl_bc_mi">忘记密码</a>
+				</div>
+			</form>
+		</div>
+	</div>
+    <div class="main">
+        <div class="main_left">
+            <a href="javascript:;" class="ml_btn">创 建</a>
+            <div class="ml_title"><a href="javascript:;">福利管理</a></div>
+            <ul class="ml_list">
+                <li><a href="" class="current">创建记录</a></li>
+                <li><a href="">已发放</a></li>
+                <li><a href="">定时发送管理</a></li>
+            </ul>
+        </div>
+        <div class="main_right">
+            <div class="mr_box">
+                <div class="mr_b_top">发放记录</div>
+                <div class="mr_b_record">
+                    <form action="" method="post">
+                        <div class="mr_br_list">
+                            <span class="words">生日时间段</span>
+                            <input type="text" placeholder="请选择日期" class="input" id="date" data-options="{'type':'YYYY-MM-DD','beginYear':2010,'endYear':2088}"/>
+                            <span>-</span>
+                            <input type="text" placeholder="请选择日期" class="input" id="date1" data-options="{'type':'YYYY-MM-DD','beginYear':2010,'endYear':2088}"/>
+                        </div>
+                        <div class="mr_br_list">
+                            <span class="words">姓名</span>
+                            <input type="text" placeholder="请输入姓名" class="input" />
+                        </div>
+                        <div class="mr_br_list">
+                            <span class="words">手机号码</span>
+                            <input type="text" placeholder="请输入手机号码" class="input" />
+                        </div>
+                        <div class="mr_br_list">
+                            <span class="words">批次号</span>
+                            <input type="text" placeholder="请输入批次号" class="input" />
+                        </div>
+                        <button type="button" class="mr_br_btn J_seacher">搜索</button>
+                    </form>
+                </div>
+                <div class="mr_b_content">
+                    <div class="mr_table_btn">
+                        <a href="javascript:;">全部删除</a>
+                        <a href="javascript:;">删除选中</a>
+                    </div>
+                    <table class="mr_table" id="table">
+                        <tr>
+                            <th width="5%"><input type="checkbox" class="all" /></th>
+                            <th width="10%">姓名</th>
+                            <th width="10%">手机号</th>
+                            <th width="5%">生日</th>
+                            <th width="15%">领取短信发送时间</th>
+                            <th width="40%">祝福语</th>
+                            <th width="15%">操作</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="J_checked" /></td>
+                            <td><input type="text" value="张三" class="mr_table_input J_table_input" /></td>
+                            <td><input type="text" value="15324125421" class="mr_table_input J_table_input" /></td>
+                            <td><input type="text" value="01.01" class="mr_table_input J_table_input" /></td>
+                            <td><input type="text" value="生日前一天发送" class="mr_table_input J_table_input" /></td>
+                            <td><input type="text" value="愿所有快乐、所有的幸福、所有好运围绕你的身边，生日快乐！" class="mr_table_input J_table_input" /></td>
+                            <td>
+                                <a href="javascript:;" class="mr_table_edit J_tableEdit">编辑</a>
+                                <a href="javascript:;" class="mr_table_delete">删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="J_checked" /></td>
+                            <td><input type="text" value="张三" class="mr_table_input J_table_input" /></td>
+                            <td><input type="text" value="15324125421" class="mr_table_input J_table_input" /></td>
+                            <td><input type="text" value="01.01" class="mr_table_input J_table_input" /></td>
+                            <td><input type="text" value="生日前一天发送" class="mr_table_input J_table_input" /></td>
+                            <td><input type="text" value="愿所有快乐、所有的幸福、所有好运围绕你的身边，生日快乐！" class="mr_table_input J_table_input" /></td>
+                            <td>
+                                <a href="javascript:;" class="mr_table_edit J_tableEdit">编辑</a>
+                                <a href="javascript:;" class="mr_table_delete">删除</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="public_page">
+                    	<div class="public_p_left">
+	                    	<span>每页</span>
+	                    	<input type="text" value="10" class="number">
+	                    	<span>条,共1条</span>
+                    	</div>
+                    	<div class="public_p_right">
+                    		<a href="javascript:;" class="first">首页</a>
+                    		<a href="javascript:;">1</a>
+                    		<a href="javascript:;" class="current">2</a>
+                    		<a href="javascript:;">3</a>
+                    		<a href="javascript:;">末页</a>
+                    		<input type="text" placeholder="输入页码" class="input">
+                    		<button type="button" class="btn">跳转</button>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/app.min.js"></script>
+    <script type="text/javascript" src="js/jquery.date.js"></script>
+	<script type="text/javascript">
+		$.date('#date');
+		$.date('#date1');
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+</head>
+<body>
+	<div class="box_top">
+		<a href="/" class="bt_logo"><img src="images/img_logo.png" alt="小象果园" /></a>
+		<div class="bt_right"><span>厦门吉象吉送电子商务</span><a href="javascript:;" class="bt_right" id="loginShow">登录</a></div>
+	</div>
+	<!-- 登录弹窗 -->
+	<div class="pop_login" id="popLogin">
+		<div class="pl_box" id="loginWrap">
+			<form action="" method="post">
+				<p class="pl_box_title">密码登录</p>
+				<div class="pl_box_c">
+					<div class="pl_bc_list">
+						<div class="left icon_hao">账号</div>
+						<div class="right"><input type="text" name="" placeholder="请输入账号" class="input" id="haoText"></div>
+					</div>
+					<div class="pl_bc_list">
+						<div class="left icon_password">密码</div>
+						<div class="right"><input type="password" name="" placeholder="请输入密码" class="input" id="passwordText"></div>
+					</div>
+					<input type="button" value="登录" class="pl_bc_btn" id="loginBtn">
+					<a href="" class="pl_bc_mi">忘记密码</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="main">
+		<div class="main_left">
+			<a href="javascript:;" class="ml_btn">创 建</a>
+			<div class="ml_title"><a href="javascript:;">福利管理</a></div>
+			<ul class="ml_list">
+				<li><a href="" class="current">创建记录</a></li>
+				<li><a href="">已发放</a></li>
+				<li><a href="">定时发送管理</a></li>
+			</ul>
+		</div>
+		<div class="main_right">
+			<div class="mr_box">
+				<div class="mr_b_top">新建福利</div>
+				<div class="mr_b_content">
+					<div class="mr_bc_tab" id="tabNav">
+						<a href="javascript:;" class="current">生日福利</a>
+						<a href="javascript:;">过节费福利</a>
+					</div>
+					<div id="tabContent">
+						<div class="mr_tab_content J_tab_list">
+							<form action="" method="post">
+								<div class="mr_tc">
+									<ul class="mr_tc_list">
+										<li>
+											<div class="mr_tcl_left">公司简称</div>
+											<div class="mr_tcl_right">
+												<div class="mr_input_btn">
+													<input type="text" name="" readonly="readongly" value="厦门吉象吉送电子商务有限公司" class="input J_input" >
+													<a href="javascript:;" class="btn J_btnModify">修改</a>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="mr_tcl_left"><span class="red">*</span>套餐选择</div>
+											<div class="mr_tcl_right mr_set_meal J_setSmeal">
+												<a href="javascript:;">79元  小象4次</a>
+												<a href="javascript:;" class="current">79元  小象4次</a>
+												<a href="javascript:;">79元  小象4次</a>
+												<a href="javascript:;">79元  小象4次</a>
+											</div>
+										</li>
+										<li>
+											<div class="mr_tcl_left"><span class="red">*</span>赠送月份</div>
+											<div class="mr_tcl_right mr_choose_amount">
+												<a href="javascript:;" class="reduce J_reduce">-</a>
+												<input type="text" value="1" class="input J_num">
+												<a href="javascript:;" class="add J_add">+</a>
+											</div>
+										</li>
+										<li>
+											<div class="mr_tcl_left">祝福语</div>
+											<div class="mr_tcl_right">
+												<textarea name="" class="txtarea J_blessings">愿所有快乐、所有幸福、所有好运围绕您的身边，生日快乐！</textarea>
+												<p class="txt">以上为默认内容，如需其他祝福语，请点击修改！ 总计30个字   （祝福语不得超过40字）</p>
+											</div>
+										</li>
+										<li>
+											<div class="mr_tcl_left">贺卡定时发送</div>
+											<div class="mr_tcl_right">
+												<input type="checkbox" checked="checked" value="" />
+												<span>定日期发</span>
+												<!-- 日期开始 -->
+												<input name="test" placeholder="请选择日期" class="demo-test-date demo-test-datetime demo-test-time demo-test-credit mr_send_time" id="date3" data-options="{'type':'YYYY-MM-DD hh:mm','beginYear':2010,'endYear':2088}"/>
+												<div class="J_settings" style="display:none;">
+										            <select name="demo" class="J_demoTime">
+										                <option value="date">日期</option>
+										            </select>
+										        </div>
+										        <!-- 日期结束 -->
+											</div>
+										</li>
+										<li>
+											<div class="mr_tcl_left">选择贺卡背景</div>
+											<div class="mr_tcl_right mr_ka" id="picKa">
+												<a href="javascript:;">
+													<div class="pic">
+														<img src="images/img_heka.png" alt="生日贺卡" />
+														<p class="words">生日贺卡</p>
+													</div>
+												</a>
+												<a href="javascript:;">
+													<div class="pic">
+														<img src="images/img_heka2.png" alt="生日贺卡" />
+														<p class="words">生日贺卡</p>
+													</div>
+												</a>
+												<a href="javascript:;">
+													<div class="pic">
+														<img src="images/img_heka3.png" alt="生日贺卡" />
+														<p class="words">生日贺卡</p>
+													</div>
+												</a>
+											</div>
+										</li>
+										<li>
+											<div class="mr_tcl_left"><span class="red">*</span>发送名单</div>
+											<div class="mr_tcl_right">
+												<div class="mr_name_list">
+													<a href="javascript:;" class="btn J_BatchImport">批量导入</a>
+													<a href="javascript:;" class="btn J_addName">逐个添加</a>
+													<a href="javascript:;" class="btn_words J_addName">已添加员工(0)</a>
+												</div>
+												<p class="mr_tip">发放名单不能为空</p>
+											</div>
+										</li>
+									</ul>
+									<div class="mr_bottom_btn">
+										<input type="submit" value="提交" class="btn_submit">
+										<input type="button" value="预览" class="btn_preview">
+									</div>
+									<!-- 贺卡点击放大 -->
+									<div class="mr_ka_big" id="popKa">
+										<img src=""  />
+									</div>
+								</div>
+							</form>
+						</div>
+
+						<div class="mr_tab_content J_tab_list" style="display: none;">
+							<form action="" method="post">
+								<div class="mr_tc">
+									<ul class="mr_tc_list">
+										<li>
+											<div class="mr_tcl_left">公司简称</div>
+											<div class="mr_tcl_right">
+												<div class="mr_input_btn">
+													<input type="text" name="" readonly="readongly" value="厦门吉象吉送电子商务有限公司" class="input J_input" >
+													<a href="javascript:;" class="btn J_btnModify">修改</a>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="mr_tcl_left"><span class="red">*</span>套餐选择</div>
+											<div class="mr_tcl_right mr_set_meal J_setSmeal">
+												<a href="javascript:;">79元  小象4次</a>
+												<a href="javascript:;" class="current">79元  小象4次</a>
+												<a href="javascript:;">79元  小象4次</a>
+												<a href="javascript:;">79元  小象4次</a>
+											</div>
+										</li>
+										<li>
+											<div class="mr_tcl_left">祝福语</div>
+											<div class="mr_tcl_right">
+												<textarea name="" class="txtarea J_blessings">愿所有快乐、所有幸福、所有好运围绕您的身边，生日快乐！</textarea>
+												<p class="txt">以上为默认内容，如需其他祝福语，请点击修改！ 总计30个字   （祝福语不得超过40字）</p>
+											</div>
+										</li>
+										<li>
+											<div class="mr_tcl_left">贺卡定时发送</div>
+											<div class="mr_tcl_right">
+												<!-- 日期开始 -->
+												<input name="test" placeholder="生日前一天发送"  class="demo-test-date demo-test-datetime demo-test-time demo-test-credit mr_send_time" id="date4" data-options="{'type':'YYYY-MM-DD hh:mm','beginYear':2010,'endYear':2088}"/>
+												<div class="J_settings" style="display:none;">
+										            <select name="demo" class="J_demoTime">
+										                <option value="date">日期</option>
+										            </select>
+										        </div>
+										        <!-- 日期结束 -->
+											</div>
+										</li>
+										<li>
+											<div class="mr_tcl_left"><span class="red">*</span>发送名单</div>
+											<div class="mr_tcl_right">
+												<div class="mr_name_list">
+													<a href="javascript:;" class="btn J_BatchImport">批量导入</a>
+													<a href="javascript:;" class="btn J_addName">逐个添加</a>
+													<a href="javascript:;" class="btn_words J_addName">已添加员工(0)</a>
+												</div>
+												<p class="mr_tip">发放名单不能为空</p>
+											</div>
+										</li>
+									</ul>
+									<div class="mr_bottom_btn">
+										<input type="submit" value="提交" class="btn_submit">
+										<input type="button" value="预览" class="btn_preview">
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 批量导入弹窗 -->
+	<div class="pop_batch_mport" id="popBatchImport">
+		<div class="pbm_box">
+			<p class="title">导入发放福利名单</p>
+			<div class="pbm_b_c">
+				<div class="words">第1步：请先<a href="" class="blue">下载模板</a>，按照说明填写信息后上传</div>
+				<div class="words">
+					<span class="words_fl">第2步：导入文件</span>
+					<div class="file_wrap">
+						<a href="javascript:;" class="fw_btn">上传</a>
+						<input type="file" class="fw_file" />
+						<span class="fw_tip">未选择文件</span>
+					</div>
+				</div>
+				<div class="txt">*文件一次导入条数 <span class="txt_num">&lt;1000条</span></div>
+				<div class="pbm_b_btn">
+					<a href="javascript:;" class="btn_confirm">确认</a>
+					<a href="javascript:;" class="btn_clsoe" id="popClose">取消</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 名单详情 -->
+	<div class="pop_name_detail" id="popNameDetail">
+		<div class="pnd_box">
+			<p class="title">名单详情</p>
+			<form action="" method="post">
+				<div class="mr_b_content">
+	                <div class="mr_table_btn">
+	                    <a href="javascript:;">全部删除</a>
+	                    <a href="javascript:;">删除选中</a>
+	                </div>
+	                <table class="mr_table" id="table">
+	                    <tr>
+	                        <th width="5%"><input type="checkbox" class="all" /></th>
+	                        <th width="10%">姓名</th>
+	                        <th width="10%">手机号</th>
+	                        <th width="5%">生日</th>
+	                        <th width="15%">领取短信发送时间</th>
+	                        <th width="40%">祝福语</th>
+	                        <th width="15%">操作</th>
+	                    </tr>
+	                    <tr>
+	                        <td><input type="checkbox" class="J_checked" /></td>
+	                        <td><input type="text" value="张三" class="mr_table_input J_table_input" /></td>
+	                        <td><input type="text" value="15324125421" class="mr_table_input J_table_input" /></td>
+	                        <td><input type="text" value="01.01" class="mr_table_input J_table_input" /></td>
+	                        <td><input type="text" value="生日前一天发送" class="mr_table_input J_table_input" /></td>
+	                        <td><input type="text" value="愿所有快乐、所有的幸福、所有好运围绕你的身边，生日快乐！" class="mr_table_input J_table_input" /></td>
+	                        <td>
+	                            <a href="javascript:;" class="mr_table_edit J_tableEdit">编辑</a>
+	                            <a href="javascript:;" class="mr_table_delete">删除</a>
+	                        </td>
+	                    </tr>
+	                    <tr>
+	                        <td><input type="checkbox" class="J_checked" /></td>
+	                        <td><input type="text" value="张三" class="mr_table_input J_table_input" /></td>
+	                        <td><input type="text" value="15324125421" class="mr_table_input J_table_input" /></td>
+	                        <td><input type="text" value="01.01" class="mr_table_input J_table_input" /></td>
+	                        <td><input type="text" value="生日前一天发送" class="mr_table_input J_table_input" /></td>
+	                        <td><input type="text" value="愿所有快乐、所有的幸福、所有好运围绕你的身边，生日快乐！" class="mr_table_input J_table_input" /></td>
+	                        <td>
+	                            <a href="javascript:;" class="mr_table_edit J_tableEdit">编辑</a>
+	                            <a href="javascript:;" class="mr_table_delete">删除</a>
+	                        </td>
+	                    </tr>
+	                </table>
+	                <div class="public_page">
+	                	<div class="public_p_left">
+	                    	<span>每页</span>
+	                    	<input type="text" value="10" class="number">
+	                    	<span>条,共1条</span>
+	                	</div>
+	                	<div class="public_p_right">
+	                		<a href="javascript:;" class="first">首页</a>
+	                		<a href="javascript:;">1</a>
+	                		<a href="javascript:;" class="current">2</a>
+	                		<a href="javascript:;">3</a>
+	                		<a href="javascript:;">末页</a>
+	                		<input type="text" placeholder="输入页码" class="input">
+	                		<button type="button" class="btn">跳转</button>
+	                	</div>
+	                </div>
+	            </div>
+		        <div class="pnd_box_btn">
+		        	<input type="button" value="提交" class="btn_submit" />
+		        	<a href="javascript:;" class="close" id="popNameClose">关闭</a>
+		        </div>
+	        </form>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<!-- 日期 -->
+	<script type="text/javascript" src="js/app.min.js"></script>
+	<script type="text/javascript" src="js/jquery.date.js"></script>
+	<script type="text/javascript">
+		$.date('#date3');
+		$.date('#date4');
+	</script>
+</body>
+</html>
