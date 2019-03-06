@@ -493,9 +493,11 @@
     </script>
     <script src="js/qrcode.min.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript">
-
+        var img=new Image();
+        img.src='';//图片(不能使用外联)
+        $(img).load(function(){
             $('.qrcode').qrcode({
-                render: 'canvas',//canvas,image,div 生成的元素(默认canvas)
+                render: 'image',//canvas,image,div 生成的元素(默认canvas)
                 minVersion: 7,//1-40 花格密度(默认1)
                 ecLevel: 'H',//'L','M','Q'or'H'精准度/错容越高越容易扫出来(默认L)
                 left: 0,// 二维码相对父元素的偏移(默认0)
@@ -518,8 +520,8 @@
                 label: '内嵌文字',//(默认"no label")
                 fontname: '楷体',//内嵌文字字体(默认"sans")
                 fontcolor: '#fa9863',//内嵌文字颜色(默认'#000')
-                image: ''
-      
+                image: img
+            });
         });
     </script>
     
